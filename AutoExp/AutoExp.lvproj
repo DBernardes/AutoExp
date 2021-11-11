@@ -18,6 +18,7 @@
 		<Item Name="AutoExp.lvclass" Type="LVClass" URL="../AutoExp/AutoExp.lvclass"/>
 		<Item Name="Stream.lvclass" Type="LVClass" URL="../Stream/Stream.lvclass"/>
 		<Item Name="Channel.lvclass" Type="LVClass" URL="../Channel/Channel.lvclass"/>
+		<Item Name="File interpreter.lvclass" Type="LVClass" URL="../File interpreter/File interpreter.lvclass"/>
 		<Item Name="CH1_Rx.vi" Type="VI" URL="../CH1_Rx.vi"/>
 		<Item Name="CH1_Tx.vi" Type="VI" URL="../CH1_Tx.vi"/>
 		<Item Name="Tests.vi" Type="VI" URL="../Tests.vi"/>
@@ -41,6 +42,8 @@
 			<Item Name="Atmcd32d.dll" Type="Document" URL="Atmcd32d.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Read File interpreter.lvclass.vi" Type="VI" URL="../AutoExp/Read File interpreter.lvclass.vi"/>
+			<Item Name="Write File interpreter.lvclass.vi" Type="VI" URL="../AutoExp/Write File interpreter.lvclass.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
