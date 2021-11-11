@@ -22,6 +22,7 @@
 		<Item Name="CH1_Rx.vi" Type="VI" URL="../CH1_Rx.vi"/>
 		<Item Name="CH1_Tx.vi" Type="VI" URL="../CH1_Tx.vi"/>
 		<Item Name="Tests.vi" Type="VI" URL="../Tests.vi"/>
+		<Item Name="JSON reader.lvclass" Type="LVClass" URL="../JSON reader/JSON reader.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
@@ -42,8 +43,6 @@
 			<Item Name="Atmcd32d.dll" Type="Document" URL="Atmcd32d.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Read File interpreter.lvclass.vi" Type="VI" URL="../AutoExp/Read File interpreter.lvclass.vi"/>
-			<Item Name="Write File interpreter.lvclass.vi" Type="VI" URL="../AutoExp/Write File interpreter.lvclass.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
