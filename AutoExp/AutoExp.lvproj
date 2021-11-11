@@ -19,10 +19,10 @@
 		<Item Name="Stream.lvclass" Type="LVClass" URL="../Stream/Stream.lvclass"/>
 		<Item Name="Channel.lvclass" Type="LVClass" URL="../Channel/Channel.lvclass"/>
 		<Item Name="File interpreter.lvclass" Type="LVClass" URL="../File interpreter/File interpreter.lvclass"/>
+		<Item Name="JSON reader.lvclass" Type="LVClass" URL="../JSON reader/JSON reader.lvclass"/>
 		<Item Name="CH1_Rx.vi" Type="VI" URL="../CH1_Rx.vi"/>
 		<Item Name="CH1_Tx.vi" Type="VI" URL="../CH1_Tx.vi"/>
 		<Item Name="Tests.vi" Type="VI" URL="../Tests.vi"/>
-		<Item Name="JSON reader.lvclass" Type="LVClass" URL="../JSON reader/JSON reader.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
