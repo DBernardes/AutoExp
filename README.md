@@ -3,6 +3,10 @@ Automatic Experiments Interface of the SPARC4 (AutoExp)
 
 This repo has the Automatic Experiments Interface of the SPARC4 (AutoExp). It was developed to allow the automatic image acquisition of the SPARC4 cameras for engineering purposes. The AutoExp receives as a input a .txt file with a pseudo-langugage to control the software. This pseudo-langugage allows some basic commands like start an acquisition, set temperature, and wait until the thermal stabilization. Also, in this file, the CCD operation mode should be provided as a json format. To the image acquisition, the AutoExp communicates using the TCP-IP protocol with the SPARC4 Acquisition Control System ([ACS](https://github.com/DBernardes/SPARC4_ACS)). The ACS is responsible for all the management of the cameras during the acquisition of a image series. 
 
+<p align="center">
+  <img src="https://github.com/DBernardes/AutoExp/blob/main/Images/mainp.png" />
+</p>
+
 This README presents a step-by-step tutorial to download the latest version of the code and run a simple image acquisition test. Figure below presents an image of the AutoExp. Even though, you do not have a Andor EMCCD camera attached to your computer, the ACS runs in a simulation mode. This mode simulates the communication with the cameras, allowing the image acquisition.
 
 ## Getting Started
