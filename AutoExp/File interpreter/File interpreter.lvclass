@@ -24,6 +24,15 @@
 	<Item Name="File interpreter.ctl" Type="Class Private Data" URL="File interpreter.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
 	</Item>
+	<Item Name="Get JSON string.vi" Type="VI" URL="../Get JSON string.vi">
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;-!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!""!-0````]'5X2S;7ZH!!![1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!"2';7RF)'FO&gt;'6S=(*F&gt;'6S)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!Y1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!".';7RF)'FO&gt;'6S=(*F&gt;'6S)'FO!'%!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!"!!)!Q!!?!!!$1A!!!!!!!!*!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!!3!!!.!!!!$!!!!!!!!!!!!!!"!!E!!!!!</Property>
+		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710291</Property>
+	</Item>
 	<Item Name="Pop command.vi" Type="VI" URL="../Pop command.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;-!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!""!-0````](9W^N&lt;7&amp;O:!![1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!"2';7RF)'FO&gt;'6S=(*F&gt;'6S)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!Y1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!".';7RF)'FO&gt;'6S=(*F&gt;'6S)'FO!'%!]!!-!!-!"!!&amp;!!9!"!!%!!1!"!!(!!1!"!!)!A!!?!!!$1A!!!!!!!!*!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!)!!!!!!!!!!!!!!!3!!!.!!!!$!!!!!!!!!!!!!!"!!E!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
@@ -52,13 +61,13 @@
 		<Property Name="NI.ClassItem.State" Type="Int">1107820544</Property>
 	</Item>
 	<Item Name="Unflat JSON.vi" Type="VI" URL="../Unflat JSON.vi">
-		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!+7!!!!'Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!".!#1!.28BQ&lt;X.V=G5A6'FN:1!41!5!$&amp;"S:3VB&lt;8!A:W&amp;J&lt;A!!%U!&amp;!!R3:7&amp;E&lt;X6U)&amp;*B&gt;'5!!!V!"1!(25UA47^E:1!.1!9!"U6.)%&gt;B;7Y!$5!'!!&gt;#;7ZO;7ZH!".!"A!-37ZJ&gt;'FB&lt;#"-;7ZF!!!61!9!$EFO;82J97QA1WRP&gt;7VO!!!21!9!#E:J&lt;G&amp;M)%RJ&lt;G5!!".!"A!-2GFO97QA1W^M&gt;7VO!!!&lt;1!=!&amp;5NJ&lt;G6U;7-A5W6S;76T)%RF&lt;G&gt;U;!!41!5!$&amp;.I&gt;82U:8)A47^E:1!!%U!'!!V$&lt;W^M:8)A4UYP4U:'!"&amp;!!1!,6'6N='6S982V=G5!#U!(!!6$&gt;7*F=Q!.1!9!"V2S;7&gt;H:8)!%%!B#V.F&gt;#"5=GFH:W6S!$2!5!!2!!5!"A!(!!A!#1!+!!M!$!!.!!Y!$Q!1!"%!%A!4!"1!&amp;1J$1U1A1W^O:GFH!!![1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!"2';7RF)'FO&gt;'6S=(*F&gt;'6S)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!Y1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!".';7RF)'FO&gt;'6S=(*F&gt;'6S)'FO!'%!]!!-!!-!"!!7!"=!"!!%!!1!"!!9!!1!"!!:!A!!?!!!$1A!!!!!!!!*!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!!3!!!.!!!!$!!!!!!!!!!!!!!"!"I!!!!!</Property>
+		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!+7!!!!'Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!".!#1!.28BQ&lt;X.V=G5A6'FN:1!41!5!$&amp;"S:3VB&lt;8!A:W&amp;J&lt;A!!%U!&amp;!!R3:7&amp;E&lt;X6U)&amp;*B&gt;'5!!!V!"1!(25UA47^E:1!.1!9!"U6.)%&gt;B;7Y!$5!'!!&gt;#;7ZO;7ZH!".!"A!-37ZJ&gt;'FB&lt;#"-;7ZF!!!61!9!$EFO;82J97QA1WRP&gt;7VO!!!21!9!#E:J&lt;G&amp;M)%RJ&lt;G5!!".!"A!-2GFO97QA1W^M&gt;7VO!!!&lt;1!=!&amp;5NJ&lt;G6U;7-A5W6S;76T)%RF&lt;G&gt;U;!!41!5!$&amp;.I&gt;82U:8)A47^E:1!!%U!'!!V$&lt;W^M:8)A4UYP4U:'!"&amp;!!1!,6'6N='6S982V=G5!#U!(!!6$&gt;7*F=Q!.1!9!"V2S;7&gt;H:8)!%%!B#V.F&gt;#"5=GFH:W6S!$2!5!!2!!5!"A!(!!A!#1!+!!M!$!!.!!Y!$Q!1!"%!%A!4!"1!&amp;1J$1U1A1W^O:GFH!!![1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!"2';7RF)'FO&gt;'6S=(*F&gt;'6S)'^V&gt;!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!Y1(!!(A!!'BB';7RF)'FO&gt;'6S=(*F&gt;'6S,GRW9WRB=X-!!".';7RF)'FO&gt;'6S=(*F&gt;'6S)'FO!'%!]!!-!!-!"!!7!"=!"!!%!!1!"!!9!!1!"!!:!Q!!?!!!$1A!!!!!!!!*!!!!$1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!!3!!!.!!!!$!!!!!!!!!!!!!!"!"I!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 		<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1342710272</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
 	</Item>
 	<Item Name="Write JSON reader.lvclass.vi" Type="VI" URL="../Write JSON reader.lvclass.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">'!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;O!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$J!=!!?!!!;'%:J&lt;'5A;7ZU:8*Q=G6U:8)O&lt;(:D&lt;'&amp;T=Q!!&amp;%:J&lt;'5A;7ZU:8*Q=G6U:8)A&lt;X6U!!!A1&amp;!!!Q!!!!%!!B.F=H*P=C"J&lt;C!I&lt;G]A:8*S&lt;X)J!$*!=!!?!!!6%UJ44UYA=G6B:'6S,GRW9WRB=X-!%UJ44UYA=G6B:'6S,GRW9WRB=X-!/%"Q!"Y!!"I92GFM:3"J&lt;H2F=H"S:82F=CZM&gt;G.M98.T!!!42GFM:3"J&lt;H2F=H"S:82F=C"J&lt;A"B!0!!$!!$!!1!"!!&amp;!!1!"!!%!!1!"A!%!!=!#!)!!(A!!!U)!!!!!!!!!!!!!!U,!!!!!!!!!!!!!!!!!!!!!!!!#!!!!!!!!!!1!!!!%A!!$1!!!!Q!!!!!!!!!!!!!!1!*!!!!!!</Property>
