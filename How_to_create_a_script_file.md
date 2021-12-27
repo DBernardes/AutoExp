@@ -1,6 +1,7 @@
-## Description of the pseudo-languge of the script files
-
-Using a single .txt file, it is possible to configure the AutoExp to execute a set of tasks related with the control of the four SPARC4 cameras. For this purpose, the AutoExp uses a pseudo-language. This pseudo-language, in turn, follows a set of strucutral rules and build-in tags, that allows the user to control the cameras temperature, as well as, the image acquisition. Following, is presented the explanaition to write a .txt file that the AutoExp can understand.
+Using a single .txt file, it is possible to configure the AutoExp to execute a set of tasks related with the control of the four SPARC4 cameras. 
+For this purpose, the AutoExp uses a pseudo-language. This pseudo-language, in turn, follows a set of strucutral rules and build-in tags, 
+that allows the user to control the cameras temperature, as well as, the image acquisition. Following, is presented a step-by-step explanaition to write a 
+.txt file that the AutoExp can understand.
 
 First of all, each command should be followed by a carrier return. So, the sequence of commands
 
