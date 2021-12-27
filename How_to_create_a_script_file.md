@@ -104,3 +104,28 @@ The allowed values of each parameter is associed with the Software Developement 
 
 * EXPOSE: this command starts and acquisition
 
+# Example of script
+
+Below is an example of script that sets the operation mode of the channel 1, turns on the cooler, sets the CCD temperature, and starts an exposure.
+
+```properties
+CHANNEL_1
+WRITE_SETUP
+{"EXPTIME":1,
+"PREAMP":0,
+"READOUT_RATE":3,
+"EM_MODE":0,
+"EM_GAIN":2,
+"BINNING":1,
+"INITIAL_LINE":1,
+"INITIAL_COLUMN":1,
+"FINAL_LINE":1024,
+"FINAL_COLUMN":1024,
+"#FRAMES":1,
+"#CUBES":1,
+"TRIGGER_MODE":0}
+SET_COOLER 1
+SET_TEMPERATURE -60
+EXPOSE
+```
+
