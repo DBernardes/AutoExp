@@ -95,9 +95,25 @@ CHANNEL_1
 EXPOSE
 ```
 
+The command ```WRITE_SETUP``` allows the user to set the operation mode of the camera. This command **must** be followed by a set of the parameters in the JSON format that will be provided to the camera. These parameters are the exposure time (EXPTIME) in seconds, the pre-amplification gain (PREAMP), the readout rate (READOUT_RATE) in MHz, the Electron Multiplying mode (EM_MODE), the Electron Multiplying gain (EM_GAIN), the binning of the pixel (BINNING), the initial line (INITIAL_LINE), initial column (INIT_AL_COLUMN), final line (FINAL_LINE), and the final column (FINAL_COLUMN) of the image, the number of frames in a image cube (#FRAMES), and the number of cubes in a sequence (#CUBES). Below is one example to set the operation mode
+
+```properties
+WRITE_SETUP
+{"EXPTIME":1,
+"PREAMP":0,
+"READOUT_RATE":3,
+"EM_MODE":0,
+"EM_GAIN":2,
+"BINNING":1,
+"INITIAL_LINE":1,
+"INITIAL_COLUMN":1,
+"FINAL_LINE":1024,
+"FINAL_COLUMN":1024,
+"#FRAMES":1,
+"#CUBES":10}
+```
 
 
- 
 
 
 ## Authors and Contact
