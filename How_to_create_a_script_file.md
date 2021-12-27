@@ -78,4 +78,8 @@ WRITE_SETUP
 
 The allowed values of each parameter is associed with the Software Developement Kit (SDK) package provided by Andor to control the cameras. The minimal exposure time value should be 1e-5 s. The pre-amplification gain has two values: 1 and 2. The EM mode would be 0 (EM) or 1 (Conventional). The EM gain should be in the range [2, 300]. The readout rate would be 0 (0.1 MHz) or 1 (1 MHz) for the convetional mode, or 0 (30 MHz), 1 (20 MHz), 2 (10 MHz), or 3 (1 MHz) for the EM mode. The binning should be an interger in the range [1, 1024]. The initial line, initial column, final line, and final columns should be an interger in the range [1, 1024]. The number of framers should be an integer in the range [1, 1000], and the number of cubes should be an integer with minimal value of 1.
 
+The command ```SET_COOLER``` allows to control the cooler of the CCD. This command should be followed by a 0 to turn off, or 1 to turn on the cooler. Before the ```SET_TEMPERATURE``` command, the expression ```SET_COOLER 1``` should be provided to the AutoExp.
+
+The command ```SET_TEMPERATURE``` allows to set the CCD temperature. This commmand should be followed by the CCD temperature. This temperature should be in the range of [10, -80] ºC. After this command, the AutoExp will set the camera temperature and wait until the return of the expression ```TEMPERATURE_STABILZED``` provided by the cameras. After this, the AutoExp is programmed to wait an extra time interval to garantee the thermal stabilization. This time was set to 20 minutes, but it could be set by the user using the ```SET_WAIT_TIME``` command.
+
 
