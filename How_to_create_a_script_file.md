@@ -58,15 +58,15 @@ CHANNEL_1
 EXPOSE
 ```
 
-The command ```WRITE_SETUP``` allows the user to set the operation mode of the camera. This command **must** be followed by a set of the parameters in the JSON format that will be provided to the camera. These parameters are the exposure time (EXPTIME) in seconds, the pre-amplification gain (PREAMP), the readout rate (READOUT_RATE) in MHz, the Electron Multiplying mode (EM_MODE), the Electron Multiplying gain (EM_GAIN), the binning of the pixel (BINNING), the initial line (INITIAL_LINE), initial column (INIT_AL_COLUMN), final line (FINAL_LINE), and the final column (FINAL_COLUMN) of the image, the number of frames in a image cube (#FRAMES), and the number of cubes in a sequence (#CUBES). Below is one example to set the operation mode
+The command ```WRITE_SETUP``` allows the user to set the operation mode of the camera. This command **must** be followed by a set of the parameters in the JSON format that will be provided to the camera. These parameters are the exposure time (EXPTIME) in seconds, the pre-amplification gain (PREAMP), the readout rate (READOUT_RATE) in MHz, the Electron Multiplying mode (EM_MODE), the Electron Multiplying gain (EM_GAIN), the binning of the pixel (BINNING), the initial line (INITIAL_LINE), initial column (INIT_AL_COLUMN), final line (FINAL_LINE), and the final column (FINAL_COLUMN) of the image, the number of frames in a image cube (#FRAMES), and the number of cubes in a sequence (#CUBES). Below is an example to set the operation mode
 
 ```properties
 WRITE_SETUP
 {"EXPTIME":1,
 "PREAMP":0,
-"READOUT_RATE":3,
 "EM_MODE":0,
 "EM_GAIN":2,
+"READOUT_RATE":3,
 "BINNING":1,
 "INITIAL_LINE":1,
 "INITIAL_COLUMN":1,
@@ -75,4 +75,7 @@ WRITE_SETUP
 "#FRAMES":1,
 "#CUBES":10}
 ```
+
+The allowed values of each parameter is associed with the Software Developement Kit (SDK) package provided by Andor to control the cameras. The minimal exposure time value should be 1e-5 s. The pre-amplification gain has two values: 1 and 2. The EM mode would be 0 (EM) or 1 (Conventional). The EM gain should be in the range [2, 300]. The readout rate would be 0 (0.1 MHz) or 1 (1 MHz) for the convetional mode, or 0 (30 MHz), 1 (20 MHz), 2 (10 MHz), or 3 (1 MHz) for the EM mode. The binning should be an interger in the range [1, 1024]. The initial line, initial column, final line, and final columns should be an interger in the range [1, 1024]. The number of framers should be an integer in the range [1, 1000], and the number of cubes should be an integer with minimal value of 1.
+
 
