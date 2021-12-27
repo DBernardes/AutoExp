@@ -1,6 +1,8 @@
+# Introduction
+
 Using a single .txt file, it is possible to configure the AutoExp to execute a set of tasks related with the control of the four SPARC4 cameras. 
-For this purpose, the AutoExp uses a pseudo-language. This pseudo-language, in turn, follows a set of strucutral rules and build-in tags, 
-that allows the user to control the cameras temperature, as well as, the image acquisition. Following, is presented a step-by-step explanaition to write a 
+For this purpose, the AutoExp uses a pseudo-language. This pseudo-language, in turn, follows a set of strucutral rules and build-in commands, 
+that allow the user to control the cameras temperature, as well as, the image acquisition. Following, is presented a step-by-step explanaition to write a 
 .txt file that the AutoExp can understand.
 
 First of all, each command should be followed by a carrier return. So, the sequence of commands
@@ -26,9 +28,8 @@ SET_TEMPERATURE 10
 EXPOSE
 ```
 
-are provided for two different channels.  
-To distinguish between channels, the tag ```CHANNEL_X```, where ```X``` is the channel number, **must** precede a sequence of commands.
-So, the correct syntax of the previous sequence of commands would be 
+are provided for two different channels. To distinguish between channels, the tag ```CHANNEL_X```, where ```X``` is the channel number, **must** precede a sequence of commands.
+So, the correct syntax of the previous sequence is
 
 ```properties
 CHANNEL_1
@@ -40,7 +41,7 @@ SET_TEMPERATURE 10
 EXPOSE
 ```
 
-In addition, the sequence of commands
+In addition, the sequence
 
 ```properties
 CHANNEL_1
@@ -57,6 +58,18 @@ SET_TEMPERATURE 10
 CHANNEL_1
 EXPOSE
 ```
+
+The AutoExp reads the entire file searching for the respective channel tag. If there are different command blocks with the tag ```CHANNEL_1```, each block is apended to the channel command list in the same order that they appears in the file. However, it should be highlighted that the command list of two different channels will be executed by the AutoExp at the same time. For example, with the following script
+
+```properties
+CHANNEL_1
+EXPOSE
+
+CHANNEL_2
+EXPOSE
+```
+
+the AutoExp does not wait until the end of the acquisition of the channel 1 to start the acquisition of the channel 2. This two commands are executed at the same time.
 
 # List of commands
 
