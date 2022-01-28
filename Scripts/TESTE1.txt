@@ -13,6 +13,7 @@ WRITE_SETUP
 "BIN":1,
 "SHUTTER_MODE":"Close",
 "EM_MODE":"Electron Multiplying"}
+SET_TEMPERATURE 5
 EXPOSE
 
 CHANNEL_2
