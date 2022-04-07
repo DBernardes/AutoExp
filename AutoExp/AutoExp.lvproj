@@ -11,7 +11,20 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="TCS Communication" Type="Folder">
+			<Item Name="TCS_Rx.vi" Type="VI" URL="../TCS_Rx.vi"/>
+			<Item Name="TCS_Rx_VISA.vi" Type="VI" URL="../TCS_Rx_VISA.vi"/>
+			<Item Name="TCS_Tx.vi" Type="VI" URL="../TCS_Tx.vi"/>
+			<Item Name="TCS_Tx_VISA.vi" Type="VI" URL="../TCS_Tx_VISA.vi"/>
+		</Item>
+		<Item Name="AutoExp Communication" Type="Folder">
+			<Item Name="CH1_Comm.vi" Type="VI" URL="../CH1_Comm.vi"/>
+			<Item Name="CH1_Comm_TCPIP.vi" Type="VI" URL="../CH1_Comm_TCPIP.vi"/>
+			<Item Name="CH1_Rx.vi" Type="VI" URL="../CH1_Rx.vi"/>
+			<Item Name="CH1_Tx.vi" Type="VI" URL="../CH1_Tx.vi"/>
+		</Item>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
+		<Item Name="Tests.vi" Type="VI" URL="../Tests.vi"/>
 		<Item Name="Interface.lvclass" Type="LVClass" URL="../Interface/Interface.lvclass"/>
 		<Item Name="RxTx.lvclass" Type="LVClass" URL="../RxTx/RxTx.lvclass"/>
 		<Item Name="State Machine.lvclass" Type="LVClass" URL="../State Machine/State Machine.lvclass"/>
@@ -22,19 +35,7 @@
 		<Item Name="JSON reader.lvclass" Type="LVClass" URL="../JSON reader/JSON reader.lvclass"/>
 		<Item Name="TCS.lvclass" Type="LVClass" URL="../TCS/TCS.lvclass"/>
 		<Item Name="Serial Communication.lvclass" Type="LVClass" URL="../Serial Communication/Serial Communication.lvclass"/>
-		<Item Name="CH1_Rx.vi" Type="VI" URL="../CH1_Rx.vi"/>
-		<Item Name="CH1_Tx.vi" Type="VI" URL="../CH1_Tx.vi"/>
-		<Item Name="Tests.vi" Type="VI" URL="../Tests.vi"/>
-		<Item Name="CH2_Rx.vi" Type="VI" URL="../CH2_Rx.vi"/>
-		<Item Name="CH2_Tx.vi" Type="VI" URL="../CH2_Tx.vi"/>
-		<Item Name="CH3_Rx.vi" Type="VI" URL="../CH3_Rx.vi"/>
-		<Item Name="CH3_Tx.vi" Type="VI" URL="../CH3_Tx.vi"/>
-		<Item Name="CH4_Rx.vi" Type="VI" URL="../CH4_Rx.vi"/>
-		<Item Name="CH4_Tx.vi" Type="VI" URL="../CH4_Tx.vi"/>
-		<Item Name="TCS_Rx.vi" Type="VI" URL="../TCS_Rx.vi"/>
-		<Item Name="TCS_Rx_VISA.vi" Type="VI" URL="../TCS_Rx_VISA.vi"/>
-		<Item Name="TCS_Tx.vi" Type="VI" URL="../TCS_Tx.vi"/>
-		<Item Name="TCS_Tx_VISA.vi" Type="VI" URL="../TCS_Tx_VISA.vi"/>
+		<Item Name="TCPIP.lvclass" Type="LVClass" URL="../TCPIP/TCPIP.lvclass"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
