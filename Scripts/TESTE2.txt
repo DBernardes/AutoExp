@@ -1,47 +1,18 @@
 CHANNEL_1
-WRITE_SETUP
-{"Exposure Time":1,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":1,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
-EXPOSE
-
-CHANNEL_2
-WRITE_SETUP
-{"Exposure Time":2,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":1,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
-EXPOSE
-
-CHANNEL_3
-WRITE_SETUP
-{"Exposure Time":3,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":1,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
-EXPOSE
-
-CHANNEL_4
-WRITE_SETUP
-{"Exposure Time":4,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":1,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
-EXPOSE
-
-CHANNEL_1
-WRITE_SETUP
-{"Exposure Time":1,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":3,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
-EXPOSE
-
-CHANNEL_2
-WRITE_SETUP
-{"Exposure Time":1,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":2,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
-EXPOSE
-
-CHANNEL_3
-WRITE_SETUP
-{"Exposure Time":1,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":4,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
-EXPOSE
-
-CHANNEL_4
-WRITE_SETUP
-{"Exposure Time":1,"Pre-amp gain":0,"Readout Rate":0,"EM Mode":0,"EM Gain":2,"Binning":1,"Initial Line":1,"Initial Cloumn":1,"Final Line":1024,"Final Column":1024,"Kinetic Series Length":1,"Shutter Mode":2,"Cooler ON/OFF":0,"Temperature":20,"Cubes":3,"Trigger":0,"Set Trigger":false}
-SET_TEMPERATURE
+SET EXPTIME 2
+SET PREAMP 1
+SET READOUT_RATE 1
+SET EM_GAIN 3
+SET BIN 2
+SET INITIAL_LINE 1
+SET INITIAL_COLUMN 1
+SET FINAL_LINE 1024
+SET FINAL_COLUMN 1024
+SET #FRAMES 2
+SET #CUBES 2
+SET SHUTTER_MODE 2
+SET EM_MODE 1
+SET SUFFIX to_the_moon
+SET COMMENT This is the observation of the TOI star
+SET OBSTYPE Just a normal planet
 EXPOSE
